@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-12T21:27:33 IST" name="MultiBrowser Suite" finished-at="2026-04-12T21:28:06 IST" duration-ms="33253">
+    <groups>
+    </groups>
+    <test started-at="2026-04-12T21:27:33 IST" name="Edge Test" finished-at="2026-04-12T21:28:03 IST" duration-ms="30260">
+      <class name="tests.TestAlert">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TestAlert@43bc63a3]" started-at="2026-04-12T21:27:33 IST" name="setup" finished-at="2026-04-12T21:27:48 IST" duration-ms="15320" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLandingPage()[pri:0, instance:tests.TestAlert@43bc63a3]" started-at="2026-04-12T21:27:48 IST" name="verifyLandingPage" finished-at="2026-04-12T21:27:54 IST" duration-ms="5901" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPage -->
+        <test-method signature="testLoginAlert()[pri:1, instance:tests.TestAlert@43bc63a3]" started-at="2026-04-12T21:27:54 IST" name="testLoginAlert" finished-at="2026-04-12T21:27:54 IST" duration-ms="262" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAlert -->
+        <test-method signature="testForgotPasswordAlert()[pri:2, instance:tests.TestAlert@43bc63a3]" started-at="2026-04-12T21:27:54 IST" name="testForgotPasswordAlert" finished-at="2026-04-12T21:27:58 IST" duration-ms="3394" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotPasswordAlert -->
+        <test-method signature="testPrivacyPolicy()[pri:3, instance:tests.TestAlert@43bc63a3]" started-at="2026-04-12T21:27:58 IST" name="testPrivacyPolicy" finished-at="2026-04-12T21:27:58 IST" duration-ms="717" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrivacyPolicy -->
+        <test-method is-config="true" signature="exitBrowser()[pri:0, instance:tests.TestAlert@43bc63a3]" started-at="2026-04-12T21:27:58 IST" name="exitBrowser" finished-at="2026-04-12T21:28:03 IST" duration-ms="4575" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- tests.TestAlert -->
+    </test> <!-- Edge Test -->
+    <test started-at="2026-04-12T21:27:33 IST" name="Chrome Test" finished-at="2026-04-12T21:28:06 IST" duration-ms="33253">
+      <class name="tests.TestAlert">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:tests.TestAlert@459e9125]" started-at="2026-04-12T21:27:33 IST" name="setup" finished-at="2026-04-12T21:27:51 IST" duration-ms="18669" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verifyLandingPage()[pri:0, instance:tests.TestAlert@459e9125]" started-at="2026-04-12T21:27:51 IST" name="verifyLandingPage" finished-at="2026-04-12T21:27:57 IST" duration-ms="5577" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLandingPage -->
+        <test-method signature="testLoginAlert()[pri:1, instance:tests.TestAlert@459e9125]" started-at="2026-04-12T21:27:57 IST" name="testLoginAlert" finished-at="2026-04-12T21:27:57 IST" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginAlert -->
+        <test-method signature="testForgotPasswordAlert()[pri:2, instance:tests.TestAlert@459e9125]" started-at="2026-04-12T21:27:57 IST" name="testForgotPasswordAlert" finished-at="2026-04-12T21:27:59 IST" duration-ms="2209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testForgotPasswordAlert -->
+        <test-method signature="testPrivacyPolicy()[pri:3, instance:tests.TestAlert@459e9125]" started-at="2026-04-12T21:27:59 IST" name="testPrivacyPolicy" finished-at="2026-04-12T21:28:00 IST" duration-ms="666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrivacyPolicy -->
+        <test-method is-config="true" signature="exitBrowser()[pri:0, instance:tests.TestAlert@459e9125]" started-at="2026-04-12T21:28:00 IST" name="exitBrowser" finished-at="2026-04-12T21:28:06 IST" duration-ms="5849" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- tests.TestAlert -->
+    </test> <!-- Chrome Test -->
+  </suite> <!-- MultiBrowser Suite -->
+</testng-results>
