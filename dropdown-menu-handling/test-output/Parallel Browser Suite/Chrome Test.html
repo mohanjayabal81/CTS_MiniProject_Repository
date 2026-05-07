@@ -1,0 +1,201 @@
+<html>
+<head>
+<title>TestNG:  Chrome Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Chrome Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Wed Apr 08 17:41:10 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>31 seconds (31773 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DropdownTest.inputTest()'><b>inputTest</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-250979479" onClick='toggleBox("Output-250979479", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-250979479" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-250979479">
+Entering user name<br><br/>
+Entering email ID<br><br/>
+Checking email availability<br><br/>
+Selecting auto-suggested email<br><br/>
+Entering password<br><br/>
+Re-entering password<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.testAlternateIdCheckBox()'><b>testAlternateIdCheckBox</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-3405537" onClick='toggleBox("Output-3405537", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-3405537" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-3405537">
+Alternate ID checkbox selected<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.validateLandingPage()'><b>validateLandingPage</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1670151081" onClick='toggleBox("Output-1670151081", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1670151081" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1670151081">
+Landing page URL is correct<br><br/>
+Landing page title is correct<br><br/>
+Landing page UI loaded correctly<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.testGender()'><b>testGender</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1812894363" onClick='toggleBox("Output-1812894363", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1812894363" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1812894363">
+Selecting gender<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.testDOB_Dropdown()'><b>testDOB_Dropdown</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1722204640" onClick='toggleBox("Output-1722204640", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1722204640" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1722204640">
+Day dropdown is enabled<br><br/>
+Month dropdown is enabled<br><br/>
+Year dropdown is enabled<br><br/>
+Selecting Date of Birth from dropdowns<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.createAccountTest()'><b>createAccountTest</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-469254129" onClick='toggleBox("Output-469254129", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-469254129" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-469254129">
+Clicking on Create Account link<br><br/>
+Create Account page title validated successfully<br><br/>
+</div>
+</td>
+<td></td>
+<td>2</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.testCountryDropdown()'><b>testCountryDropdown</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1264570196" onClick='toggleBox("Output-1264570196", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1264570196" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1264570196">
+Country dropdown validated<br><br/>
+</div>
+</td>
+<td></td>
+<td>6</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.testCityDropdown()'><b>testCityDropdown</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1764985103" onClick='toggleBox("Output-1764985103", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1764985103" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1764985103">
+City dropdown is enabled<br><br/>
+City selected successfully<br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+<tr>
+<td title='tests.DropdownTest.validateCountrySelection()'><b>validateCountrySelection</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-5324238" onClick='toggleBox("Output-5324238", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-5324238" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-5324238">
+Country dropdown is enabled<br><br/>
+Country selected and validated<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@7586beff</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,412 @@
+<html>
+<head>
+<title>TestNG:  Edge Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Edge Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Apr 02 12:25:10 IST 2026</td>
+</tr>
+<tr><td>Total time:</td><td>22 seconds (22607 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.DropdownTest.createAccountTest()'><b>createAccountTest</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-606593028" onClick='toggleBox("Output-606593028", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-606593028" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-606593028">
+Clicking on Create Account link<br><br/>
+Create Account page title validated successfully<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@40005471</td></tr>
+<tr>
+<td title='tests.DropdownTest.testGender()'><b>testGender</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1108066952" onClick='toggleBox("Output-1108066952", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1108066952" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1108066952">
+Selecting gender<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@40005471</td></tr>
+<tr>
+<td title='tests.DropdownTest.validateCountrySelection()'><b>validateCountrySelection</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1547116051" onClick='toggleBox("Output-1547116051", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1547116051" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1547116051">
+Selecting country: India<br><br/>
+Selected country is: India<br/>
+Actual selected country: India<br><br/>
+Country selection validated successfully<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@40005471</td></tr>
+<tr>
+<td title='tests.DropdownTest.testDOB_Dropdown()'><b>testDOB_Dropdown</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1105090408" onClick='toggleBox("Output-1105090408", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1105090408" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1105090408">
+Selecting Date of Birth from dropdowns<br><br/>
+</div>
+</td>
+<td></td>
+<td>0</td>
+<td>tests.DropdownTest@40005471</td></tr>
+<tr>
+<td title='tests.DropdownTest.inputTest()'><b>inputTest</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-2094115865" onClick='toggleBox("Output-2094115865", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-2094115865" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-2094115865">
+Entering user name<br><br/>
+Entering email ID<br><br/>
+Checking email availability<br><br/>
+Selecting auto-suggested email<br><br/>
+Entering password<br><br/>
+Re-entering password<br><br/>
+</div>
+</td>
+<td></td>
+<td>1</td>
+<td>tests.DropdownTest@40005471</td></tr>
+<tr>
+<td title='tests.DropdownTest.testCountryDropdown()'><b>testCountryDropdown</b><br>Test class: tests.DropdownTest<br/>
+<a href="#Output-1371400311" onClick='toggleBox("Output-1371400311", this, "Show output", "Hide output");'>Show output</a>
+
+<a href="#Output-1371400311" onClick="toggleAllBoxes();">Show all outputs</a>
+<div class='log' id="Output-1371400311">
+Fetching all countries from Country dropdown<br><br/>
+Available Countries:<br><br/>
+India<br><br/>
+American Samoa<br><br/>
+Andorra<br><br/>
+Angola<br><br/>
+Anguilla<br><br/>
+Antarctica<br><br/>
+Antigua And Barbuda<br><br/>
+Argentina<br><br/>
+Armenia<br><br/>
+Aruba<br><br/>
+Australia<br><br/>
+Austria<br><br/>
+Azerbaijan<br><br/>
+Bahamas<br><br/>
+Bahrain<br><br/>
+Bangladesh<br><br/>
+Barbados<br><br/>
+Belarus<br><br/>
+Belgium<br><br/>
+Belize<br><br/>
+Benin<br><br/>
+Bermuda<br><br/>
+Bhutan<br><br/>
+Bolivia<br><br/>
+Bosnia and Herzegovina<br><br/>
+Botswana<br><br/>
+Bouvet Island<br><br/>
+Brazil<br><br/>
+British Indian Ocean Territory<br><br/>
+Brunei<br><br/>
+Bulgaria<br><br/>
+Burkina Faso<br><br/>
+Burundi<br><br/>
+Cambodia<br><br/>
+Cameroon<br><br/>
+Canada<br><br/>
+Cape Verde<br><br/>
+Cayman Islands<br><br/>
+Central African Republic<br><br/>
+Chad<br><br/>
+Chile<br><br/>
+China<br><br/>
+China (Hong Kong S.A.R.)<br><br/>
+China (Macau S.A.R.)<br><br/>
+Christmas Island<br><br/>
+Cocos (Keeling) Islands<br><br/>
+Colombia<br><br/>
+Comoros<br><br/>
+Congo<br><br/>
+Congo Democractic Republic of the<br><br/>
+Cook Islands<br><br/>
+Costa Rica<br><br/>
+Cote D'Ivoire (Ivory Coast)<br><br/>
+Croatia (Hrvatska)<br><br/>
+Cuba<br><br/>
+Cyprus<br><br/>
+Czech Republic<br><br/>
+Denmark<br><br/>
+Djibouti<br><br/>
+Dominica<br><br/>
+Dominican Republic<br><br/>
+East Timor<br><br/>
+Ecuador<br><br/>
+Egypt<br><br/>
+El Salvador<br><br/>
+Equatorial Guinea<br><br/>
+Eritrea<br><br/>
+Estonia<br><br/>
+Ethiopia<br><br/>
+Falkland Islands (Islas Malvinas)<br><br/>
+Faroe Islands<br><br/>
+Fiji Islands<br><br/>
+Finland<br><br/>
+France<br><br/>
+French Guiana<br><br/>
+French Polynesia<br><br/>
+French Southern Territories<br><br/>
+Gabon<br><br/>
+Gambia<br><br/>
+Georgia<br><br/>
+Germany<br><br/>
+Ghana<br><br/>
+Gibraltar<br><br/>
+Greece<br><br/>
+Greenland<br><br/>
+Grenada<br><br/>
+Guadeloupe<br><br/>
+Guam<br><br/>
+Guatemala<br><br/>
+Guinea<br><br/>
+Guinea-Bissau<br><br/>
+Guyana<br><br/>
+Haiti<br><br/>
+Heard and McDonald Islands<br><br/>
+Honduras<br><br/>
+Hungary<br><br/>
+Iceland<br><br/>
+Indonesia<br><br/>
+Iran<br><br/>
+Iraq<br><br/>
+Ireland<br><br/>
+Israel<br><br/>
+Italy<br><br/>
+Jamaica<br><br/>
+Japan<br><br/>
+Jordan<br><br/>
+Kazakhstan<br><br/>
+Kenya<br><br/>
+Kiribati<br><br/>
+Korea<br><br/>
+Korea North<br><br/>
+Kuwait<br><br/>
+Kyrgyzstan<br><br/>
+Laos<br><br/>
+Latvia<br><br/>
+Lebanon<br><br/>
+Lesotho<br><br/>
+Liberia<br><br/>
+Libya<br><br/>
+Liechtenstein<br><br/>
+Lithuania<br><br/>
+Luxembourg<br><br/>
+Macedonia Former Yugoslav Republic of<br><br/>
+Madagascar<br><br/>
+Malawi<br><br/>
+Malaysia<br><br/>
+Maldives<br><br/>
+Mali<br><br/>
+Malta<br><br/>
+Marshall Islands<br><br/>
+Martinique<br><br/>
+Mauritania<br><br/>
+Mauritius<br><br/>
+Mayotte<br><br/>
+Mexico<br><br/>
+Micronesia<br><br/>
+Moldova<br><br/>
+Monaco<br><br/>
+Mongolia<br><br/>
+Montserrat<br><br/>
+Morocco<br><br/>
+Mozambique<br><br/>
+Myanmar<br><br/>
+Namibia<br><br/>
+Nauru<br><br/>
+Nepal<br><br/>
+Netherlands Antilles<br><br/>
+Netherlands<br><br/>
+New Caledonia<br><br/>
+New Zealand<br><br/>
+Nicaragua<br><br/>
+Niger<br><br/>
+Nigeria<br><br/>
+Niue<br><br/>
+Norfolk Island<br><br/>
+Northern Mariana Islands<br><br/>
+Norway<br><br/>
+Oman<br><br/>
+Pakistan<br><br/>
+Palau<br><br/>
+Panama<br><br/>
+Papua new Guinea<br><br/>
+Paraguay<br><br/>
+Peru<br><br/>
+Philippines<br><br/>
+Pitcairn Island<br><br/>
+Poland<br><br/>
+Portugal<br><br/>
+Puerto Rico<br><br/>
+Qatar<br><br/>
+Reunion<br><br/>
+Romania<br><br/>
+Russia<br><br/>
+Rwanda<br><br/>
+Saint Helena<br><br/>
+Saint Kitts And Nevis<br><br/>
+Saint Lucia<br><br/>
+Saint Pierre and Miquelon<br><br/>
+Saint Vincent And The Grenadines<br><br/>
+Samoa<br><br/>
+San Marino<br><br/>
+Sao Tome and Principe<br><br/>
+Saudi Arabia<br><br/>
+Senegal<br><br/>
+Seychelles<br><br/>
+Sierra Leone<br><br/>
+Singapore<br><br/>
+Slovakia<br><br/>
+Slovenia<br><br/>
+Solomon Islands<br><br/>
+Somalia<br><br/>
+South Africa<br><br/>
+South Georgia And The South Sandwich Islands<br><br/>
+Spain<br><br/>
+Sri Lanka<br><br/>
+Sudan<br><br/>
+Suriname<br><br/>
+Svalbard And Jan Mayen Islands<br><br/>
+Swaziland<br><br/>
+Sweden<br><br/>
+Switzerland<br><br/>
+Syria<br><br/>
+Taiwan<br><br/>
+Tajikistan<br><br/>
+Tanzania<br><br/>
+Thailand<br><br/>
+Togo<br><br/>
+Tokelau<br><br/>
+Tonga<br><br/>
+Trinidad And Tobago<br><br/>
+Tunisia<br><br/>
+Turkey<br><br/>
+Turkmenistan<br><br/>
+Turks And Caicos Islands<br><br/>
+Tuvalu<br><br/>
+Uganda<br><br/>
+Ukraine<br><br/>
+United Arab Emirates<br><br/>
+United Kingdom<br><br/>
+United States<br><br/>
+United States Minor Outlying Islands<br><br/>
+Uruguay<br><br/>
+Uzbekistan<br><br/>
+Vanuatu<br><br/>
+Vatican City State (Holy See)<br><br/>
+Venezuela<br><br/>
+Vietnam<br><br/>
+Virgin Islands (British)<br><br/>
+Virgin Islands (US)<br><br/>
+Wallis And Futuna Islands<br><br/>
+Western Sahara<br><br/>
+Yemen<br><br/>
+Yugoslavia<br><br/>
+Zambia<br><br/>
+Zimbabwe<br><br/>
+Afghanistan<br><br/>
+Albania<br><br/>
+Algeria<br><br/>
+Gaza Strip<br><br/>
+United Kingdom<br><br/>
+Jersey<br><br/>
+Kosovo<br><br/>
+Montenegro<br><br/>
+Saint Barthelemy<br><br/>
+Saint Martin<br><br/>
+Serbia<br><br/>
+Timor-Leste<br><br/>
+West Bank<br><br/>
+Printing total number of countries<br><br/>
+Total number of countries: 248<br><br/>
+</div>
+</td>
+<td></td>
+<td>7</td>
+<td>tests.DropdownTest@40005471</td></tr>
+</table><p>
+</body>
+</html>
