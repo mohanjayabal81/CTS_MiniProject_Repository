@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-21T11:48:15 IST" name="Default suite" finished-at="2026-04-21T11:48:43 IST" duration-ms="27490">
+    <groups>
+    </groups>
+    <test started-at="2026-04-21T11:48:15 IST" name="Default test" finished-at="2026-04-21T11:48:43 IST" duration-ms="27490">
+      <class name="BaseClass.baseClass">
+        <test-method is-config="true" signature="BrowserChoose()[pri:0, instance:BaseClass.baseClass@233795b6]" started-at="2026-04-21T11:48:01 IST" name="BrowserChoose" finished-at="2026-04-21T11:48:15 IST" duration-ms="13724" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BrowserChoose -->
+        <test-method signature="LoginPage()[pri:0, instance:BaseClass.baseClass@233795b6]" started-at="2026-04-21T11:48:15 IST" name="LoginPage" finished-at="2026-04-21T11:48:24 IST" duration-ms="8445" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method signature="AddDetails_Page()[pri:0, instance:BaseClass.baseClass@233795b6]" started-at="2026-04-21T11:48:24 IST" name="AddDetails_Page" finished-at="2026-04-21T11:48:37 IST" depends-on-methods="BaseClass.baseClass.LoginPage" duration-ms="13442" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AddDetails_Page -->
+        <test-method signature="EditDetails_Page()[pri:0, instance:BaseClass.baseClass@233795b6]" started-at="2026-04-21T11:48:37 IST" name="EditDetails_Page" finished-at="2026-04-21T11:48:42 IST" depends-on-methods="BaseClass.baseClass.AddDetails_Page" duration-ms="4408" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- EditDetails_Page -->
+        <test-method signature="Logout_Page()[pri:0, instance:BaseClass.baseClass@233795b6]" started-at="2026-04-21T11:48:42 IST" name="Logout_Page" finished-at="2026-04-21T11:48:43 IST" depends-on-methods="BaseClass.baseClass.EditDetails_Page" duration-ms="998" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Logout_Page -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:BaseClass.baseClass@233795b6]" started-at="2026-04-21T11:48:43 IST" name="closeBrowser" finished-at="2026-04-21T11:48:44 IST" duration-ms="631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- BaseClass.baseClass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

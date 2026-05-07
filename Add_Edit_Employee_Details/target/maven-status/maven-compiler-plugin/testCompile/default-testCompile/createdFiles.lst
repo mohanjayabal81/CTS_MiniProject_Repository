@@ -1,0 +1,6 @@
+BaseClass\baseClass.class
+BaseClass\google.class
+TestingPages\login.class
+TestingPages\LogOut.class
+TestingPages\addDetails.class
+TestingPages\editDetails.class
