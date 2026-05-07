@@ -1,0 +1,45 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <!-- Defines Maven project model version -->
+    <modelVersion>4.0.0</modelVersion>
+
+    <!-- Unique group identifier for the project -->
+    <groupId>com.selenium.demo</groupId>
+
+    <!-- Project name/artifact -->
+    <artifactId>seleniumPrograms</artifactId>
+
+    <!-- Project version -->
+    <version>0.0.1-SNAPSHOT</version>
+
+    <!-- Project dependencies configuration -->
+    <dependencies>
+
+        <!-- Selenium WebDriver for browser automation -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.41.0</version>
+            <scope>compile</scope>
+        </dependency>
+
+        <!-- Apache POI for reading and writing Excel (.xlsx) files -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.5</version>
+        </dependency>
+        
+        <dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.9.0</version>
+    <scope>test</scope>
+</dependency>
+
+    </dependencies>
+
+</project>

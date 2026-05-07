@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="9" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-22T10:00:24 IST" name="Surefire suite" finished-at="2026-04-22T10:00:35 IST" duration-ms="10216">
+    <groups>
+    </groups>
+    <test started-at="2026-04-22T10:00:24 IST" name="Surefire test" finished-at="2026-04-22T10:00:35 IST" duration-ms="10216">
+      <class name="tests.TestLandingPage">
+        <test-method is-config="true" signature="initializePage()[pri:0, instance:tests.TestLandingPage@1e802ef9]" started-at="2026-04-22T10:00:24 IST" name="initializePage" finished-at="2026-04-22T10:00:24 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method signature="advancesBtn()[pri:0, instance:tests.TestLandingPage@1e802ef9]" started-at="2026-04-22T10:00:25 IST" name="advancesBtn" finished-at="2026-04-22T10:00:25 IST" duration-ms="993" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancesBtn -->
+      </class> <!-- tests.TestLandingPage -->
+      <class name="tests.BaseTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.BaseTest@12b0404f]" started-at="2026-04-22T10:00:20 IST" name="setupSuite" finished-at="2026-04-22T10:00:24 IST" duration-ms="4540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.BaseTest@12b0404f]" started-at="2026-04-22T10:00:35 IST" name="tearDownSuite" finished-at="2026-04-22T10:00:40 IST" duration-ms="5218" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- tests.BaseTest -->
+      <class name="tests.TestSearchPage">
+        <test-method is-config="true" signature="InstalizePage()[pri:0, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:25 IST" name="InstalizePage" finished-at="2026-04-22T10:00:26 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InstalizePage -->
+        <test-method signature="advancesSearch()[pri:1, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:26 IST" name="advancesSearch" finished-at="2026-04-22T10:00:26 IST" duration-ms="37" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancesSearch -->
+        <test-method signature="selectCategory()[pri:0, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:26 IST" name="selectCategory" finished-at="2026-04-22T10:00:26 IST" depends-on-methods="tests.TestSearchPage.advancesSearch" duration-ms="249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="searchInclude()[pri:0, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:26 IST" name="searchInclude" finished-at="2026-04-22T10:00:26 IST" depends-on-methods="tests.TestSearchPage.selectCategory" duration-ms="23" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInclude -->
+        <test-method signature="conditioRadioBox()[pri:0, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:26 IST" name="conditioRadioBox" finished-at="2026-04-22T10:00:28 IST" depends-on-methods="tests.TestSearchPage.searchInclude" duration-ms="2075" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conditioRadioBox -->
+        <test-method signature="showResult()[pri:0, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:28 IST" name="showResult" finished-at="2026-04-22T10:00:28 IST" depends-on-methods="tests.TestSearchPage.conditioRadioBox" duration-ms="178" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showResult -->
+        <test-method signature="item_Location()[pri:0, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:28 IST" name="item_Location" finished-at="2026-04-22T10:00:28 IST" depends-on-methods="tests.TestSearchPage.showResult" duration-ms="71" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_Location -->
+        <test-method signature="searchClick()[pri:0, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:28 IST" name="searchClick" finished-at="2026-04-22T10:00:30 IST" depends-on-methods="tests.TestSearchPage.item_Location" duration-ms="1964" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchClick -->
+        <test-method signature="dataIntoExcel()[pri:8, instance:tests.TestSearchPage@670002]" started-at="2026-04-22T10:00:30 IST" name="dataIntoExcel" finished-at="2026-04-22T10:00:35 IST" duration-ms="4565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataIntoExcel -->
+      </class> <!-- tests.TestSearchPage -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

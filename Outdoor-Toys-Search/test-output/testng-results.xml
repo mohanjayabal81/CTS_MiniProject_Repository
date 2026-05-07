@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="8" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-05T15:06:16 IST" name="Suite" finished-at="2026-05-05T15:06:29 IST" duration-ms="13579">
+    <groups>
+    </groups>
+    <test started-at="2026-05-05T15:06:16 IST" name="Test" finished-at="2026-05-05T15:06:29 IST" duration-ms="13579">
+      <class name="tests.TestLandingPage">
+        <test-method is-config="true" signature="initializePage()[pri:0, instance:tests.TestLandingPage@15de0b3c]" started-at="2026-05-05T15:06:29 IST" name="initializePage" finished-at="2026-05-05T15:06:29 IST" duration-ms="54" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializePage -->
+        <test-method signature="advancesBtn()[pri:0, instance:tests.TestLandingPage@15de0b3c]" started-at="2026-05-05T15:06:29 IST" name="advancesBtn" finished-at="2026-05-05T15:06:29 IST" duration-ms="5" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancesBtn -->
+      </class> <!-- tests.TestLandingPage -->
+      <class name="tests.TestSearchPage">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:05 IST" name="setupSuite" finished-at="2026-05-05T15:06:16 IST" duration-ms="11165" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="InstalizePage()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:16 IST" name="InstalizePage" finished-at="2026-05-05T15:06:16 IST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- InstalizePage -->
+        <test-method signature="advancesSearch()[pri:1, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:16 IST" name="advancesSearch" finished-at="2026-05-05T15:06:19 IST" duration-ms="2744" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- advancesSearch -->
+        <test-method signature="selectCategory()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:19 IST" name="selectCategory" finished-at="2026-05-05T15:06:20 IST" depends-on-methods="tests.TestSearchPage.advancesSearch" duration-ms="1045" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCategory -->
+        <test-method signature="searchInclude()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:20 IST" name="searchInclude" finished-at="2026-05-05T15:06:20 IST" depends-on-methods="tests.TestSearchPage.selectCategory" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchInclude -->
+        <test-method signature="conditioRadioBox()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:20 IST" name="conditioRadioBox" finished-at="2026-05-05T15:06:22 IST" depends-on-methods="tests.TestSearchPage.searchInclude" duration-ms="2278" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- conditioRadioBox -->
+        <test-method signature="showResult()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:22 IST" name="showResult" finished-at="2026-05-05T15:06:23 IST" depends-on-methods="tests.TestSearchPage.conditioRadioBox" duration-ms="468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showResult -->
+        <test-method signature="item_Location()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:23 IST" name="item_Location" finished-at="2026-05-05T15:06:23 IST" depends-on-methods="tests.TestSearchPage.showResult" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- item_Location -->
+        <test-method signature="searchClick()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:23 IST" name="searchClick" finished-at="2026-05-05T15:06:26 IST" depends-on-methods="tests.TestSearchPage.item_Location" duration-ms="2523" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchClick -->
+        <test-method signature="dataIntoExcel()[pri:8, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:26 IST" name="dataIntoExcel" finished-at="2026-05-05T15:06:29 IST" duration-ms="3785" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchWindowException">
+            <message>
+              <![CDATA[no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a58ca2f657806b5485766b5ff25abd8, findElement {value=//*[@id='srp-river-results']/ul/li[17]/div/div[2]/div[1]/a/div/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2478650\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62570}, goog:processID: 17464, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62570/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a58ca2f657806b5485766b5ff25abd8]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=146.0.7680.178)
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [3a58ca2f657806b5485766b5ff25abd8, findElement {value=//*[@id='srp-river-results']/ul/li[17]/div/div[2]/div[1]/a/div/span, using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: C:\Users\2478650\AppData\Lo...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62570}, goog:processID: 17464, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62570/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 3a58ca2f657806b5485766b5ff25abd8
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:169)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:142)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:223)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:604)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:166)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:427)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:421)
+at pages.SearchFilter.dataRetrivel(SearchFilter.java:129)
+at tests.TestSearchPage.dataIntoExcel(TestSearchPage.java:68)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchWindowException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dataIntoExcel -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:tests.TestSearchPage@7eac9008]" started-at="2026-05-05T15:06:30 IST" name="tearDownSuite" finished-at="2026-05-05T15:06:35 IST" duration-ms="5759" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- tests.TestSearchPage -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
