@@ -1,0 +1,58 @@
+package pages;
+
+import java.io.IOException;
+import java.time.Duration;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import configReader.ObjectReader;
+import utility.ExcelUtils;
+import utility.FindElementUtils;
+import utility.WaitUtils;
+
+public class HomePage {
+	
+	WebDriver driver = null;
+	FindElementUtils findUtil = null;
+	ObjectReader objReader = null;
+	WaitUtils waitUtil;
+	ExcelUtils excelUtil;
+	
+	// Locators stored as strings for easy reference later
+//	String relevanceXPath = "//li[normalize-space()='Relevance']";
+//	String goBtnXPath = "//*[@id=\"content_wrapper\"]/div[7]/div[3]/div/div[1]/div[2]/div[2]/div[3]/div/div[5]";
+
+	public HomePage(WebDriver driver) throws IOException {
+		this.driver = driver;
+		
+		// Setting up our helpers and readers so we can use them in this class
+		this.objReader = new ObjectReader();
+		this.findUtil = new FindElementUtils(driver);
+		this.excelUtil = new ExcelUtils();
+		this.waitUtil = new WaitUtils(driver, Duration.ofSeconds(1));
+	}
+	
+	// Checking if the page title matches what we expect for Snapdeal
+	public boolean verifyHomePageTitle() {
+//		driver.get(or.getURL("BASSEURL"));
+		String title = driver.getTitle();
+		String actualTitle = "Shop Online for Men, Women & Kids Clothing, Shoes, Home Decor Items";
+		return title.equals(actualTitle);
+	}
+	
+	// Doing the search for headphones and hitting Enter
+	public WebElement searchProduct() {
+		// Finding the search box using the ID from our properties file
+		WebElement searchBox = findUtil.findElementById(objReader.getSearchBoxId());
+		searchBox.sendKeys("Bluetooth Headphones");
+		
+		// Giving the page a moment to process before hitting Enter
+		waitUtil.explicitWait();
+		searchBox.sendKeys(Keys.ENTER);
+		
+		// Returning the field so we can check it later if needed
+		WebElement searchField = findUtil.findElementById("inputValEnter");
+		return searchField;
+	}
+}

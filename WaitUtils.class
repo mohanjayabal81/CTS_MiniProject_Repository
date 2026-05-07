@@ -1,0 +1,61 @@
+package utility;
+
+import java.io.File;
+import java.io.IOException;
+//import java.util.*;
+import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+public class ScreenshotUtils {
+	
+	TakesScreenshot ts;
+	String location;
+
+	// Constructor to set the folder where we want to save our images
+	public ScreenshotUtils(String loc) {
+		this.location = loc;
+	}
+	
+	// Method to capture the whole browser window
+	public String fullScreenShot(WebDriver driver, String imageName) {
+		// Converting driver to TakesScreenshot type
+		ts = (TakesScreenshot) driver;
+		File src = ts.getScreenshotAs(OutputType.FILE);
+		
+		// Setting up the file path and name
+		String path = location + "/" + imageName + ".png";
+		File dest = new File(path);
+		
+		try {
+			// Copying the screenshot from memory to our folder
+			FileUtils.copyFile(src, dest);
+			return path;
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		return "";
+	}
+
+	// Method to capture just one specific element on the page
+	public String elementScreenShot(WebElement element, String imageName) {
+		// Converting the element itself to take a screenshot
+		ts = (TakesScreenshot) element;
+		File src = ts.getScreenshotAs(OutputType.FILE);
+		
+		// Giving the file a name and destination
+		String path = location + "/" + imageName + ".png";
+		File dest = new File(path);
+		
+		try {
+			// Saving the element image to the path
+			FileUtils.copyFile(src, dest);
+			return path;
+		} catch (IOException e) {
+			System.out.println(e.getMessage());
+		}
+		return "";
+	}
+}

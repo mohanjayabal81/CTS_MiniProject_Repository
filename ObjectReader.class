@@ -1,0 +1,21 @@
+package implementation;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+
+public class BrowserImplementation {
+//	WebDriver driver=null;
+	
+	// Creating and returning a new ChromeDriver instance
+	public WebDriver getChromeDriver() {
+		return new ChromeDriver();
+	}
+	
+	// Creating and returning a new EdgeDriver instance
+	public WebDriver getEdgeDriver() {
+		return new EdgeDriver();
+	}
+
+}

@@ -1,0 +1,67 @@
+package utility;
+
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
+import org.apache.poi.ss.usermodel.Row;
+import org.apache.poi.xssf.usermodel.XSSFSheet;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+
+public class ExcelUtils {
+
+	// Method to take our data array and save it into an Excel file
+	public void writeToExcel(String location, String[][] data) {
+		try (XSSFWorkbook workbook = new XSSFWorkbook()) {
+			// Creating a new sheet in the workbook
+			XSSFSheet sheet = workbook.createSheet();
+			
+			// Creating the header row at index 0
+			Row row = sheet.createRow(0);
+			row.createCell(0).setCellValue("S. No.");
+			row.createCell(1).setCellValue("Product Name");
+			row.createCell(2).setCellValue("Price");
+			
+			// Looping through the data array to fill the rows
+			for (int i = 0; i < data.length; i++) {
+				Row nr = sheet.createRow(i + 1);
+				nr.createCell(0).setCellValue(data[i][0]);
+				nr.createCell(1).setCellValue(data[i][1]);
+				nr.createCell(2).setCellValue(data[i][2]);
+//				System.out.println(productName.get(i).getText()+" "+productPrice.get(i).getText());
+			}
+			
+			// Actually writing the file to the specified location
+			workbook.write(new FileOutputStream(location));
+			
+		} catch (Exception e) {
+			System.out.println("Writing to Excel failed " + e.getMessage());
+		}
+	}
+	
+	// Method to read data from an existing Excel file and print it
+	public void readFromExcel(String filePath) {
+		try (FileInputStream fis = new FileInputStream(new File(filePath));
+			 XSSFWorkbook workbook = new XSSFWorkbook(fis)) {
+
+			// Getting the first sheet from the file
+			XSSFSheet sheet = workbook.getSheetAt(0);
+			DataFormatter f = new DataFormatter();
+			
+			// Going through each row one by one
+			for (Row row : sheet) {
+				// Going through each cell in that row
+				for (Cell cell : row) {
+					System.out.printf("%s \t", f.formatCellValue(cell));
+				}
+				// Printing a new line after each row is done
+				System.out.println();
+			}
+
+		} catch (Exception e) {
+			System.out.println("Reading from Excel failed: " + e.getMessage());
+		}
+	}
+}
