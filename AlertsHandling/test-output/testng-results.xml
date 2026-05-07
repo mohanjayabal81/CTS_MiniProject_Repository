@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="8" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Navigated to URL: https://demo.automationtesting.in/Alerts.html]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to URL: https://demo.automationtesting.in/Alerts.html]]>
+    </line>
+    <line>
+      <![CDATA[PASSED - Alerts page verified. Title: Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Simple Alert button]]>
+    </line>
+    <line>
+      <![CDATA[Expected: I am an alert box! | Actual: I am an alert box!]]>
+    </line>
+    <line>
+      <![CDATA[PASSED – Simple alert message verified]]>
+    </line>
+    <line>
+      <![CDATA[Handling Confirmation Alert]]>
+    </line>
+    <line>
+      <![CDATA[Expected: You Pressed Cancel | Actual: You Pressed Cancel]]>
+    </line>
+    <line>
+      <![CDATA[PASSED – Confirmation alert message verified]]>
+    </line>
+    <line>
+      <![CDATA[Handling Prompt Alert]]>
+    </line>
+    <line>
+      <![CDATA[Expected: Hello Tejas How are you today | Actual: Hello Tejas How are you today]]>
+    </line>
+    <line>
+      <![CDATA[PASSED – Prompt alert message verified]]>
+    </line>
+    <line>
+      <![CDATA[PASSED - Alerts page verified. Title: Alerts]]>
+    </line>
+    <line>
+      <![CDATA[Clicked on Simple Alert button]]>
+    </line>
+    <line>
+      <![CDATA[Expected: I am an alert box! | Actual: I am an alert box!]]>
+    </line>
+    <line>
+      <![CDATA[PASSED – Simple alert message verified]]>
+    </line>
+    <line>
+      <![CDATA[Handling Confirmation Alert]]>
+    </line>
+    <line>
+      <![CDATA[Expected: You Pressed Cancel | Actual: You Pressed Cancel]]>
+    </line>
+    <line>
+      <![CDATA[PASSED – Confirmation alert message verified]]>
+    </line>
+    <line>
+      <![CDATA[Handling Prompt Alert]]>
+    </line>
+    <line>
+      <![CDATA[Expected: Hello Tejas How are you today | Actual: Hello Tejas How are you today]]>
+    </line>
+    <line>
+      <![CDATA[PASSED – Prompt alert message verified]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed successfully]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed successfully]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-04-10T14:58:48 IST" name="Alerts Suite" finished-at="2026-04-10T14:59:13 IST" duration-ms="24973">
+    <groups>
+    </groups>
+    <test started-at="2026-04-10T14:58:48 IST" name="EdgeTest" finished-at="2026-04-10T14:59:11 IST" duration-ms="22864">
+      <class name="tests.AlertsPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AlertsPageTest@3fc2959f]" started-at="2026-04-10T14:58:49 IST" name="setUp" finished-at="2026-04-10T14:58:54 IST" duration-ms="5637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigated to URL: https://demo.automationtesting.in/Alerts.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateAlertsPage()[pri:0, instance:tests.AlertsPageTest@3fc2959f]" started-at="2026-04-10T14:58:54 IST" name="validateAlertsPage" finished-at="2026-04-10T14:59:04 IST" duration-ms="9363" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[PASSED - Alerts page verified. Title: Alerts]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateAlertsPage -->
+        <test-method signature="simpleAlertTestCase()[pri:1, instance:tests.AlertsPageTest@3fc2959f]" started-at="2026-04-10T14:59:04 IST" name="simpleAlertTestCase" finished-at="2026-04-10T14:59:05 IST" duration-ms="859" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Simple Alert button]]>
+            </line>
+            <line>
+              <![CDATA[Expected: I am an alert box! | Actual: I am an alert box!]]>
+            </line>
+            <line>
+              <![CDATA[PASSED – Simple alert message verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- simpleAlertTestCase -->
+        <test-method signature="confirmAlertTestCase()[pri:2, instance:tests.AlertsPageTest@3fc2959f]" started-at="2026-04-10T14:59:05 IST" name="confirmAlertTestCase" finished-at="2026-04-10T14:59:05 IST" duration-ms="483" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Handling Confirmation Alert]]>
+            </line>
+            <line>
+              <![CDATA[Expected: You Pressed Cancel | Actual: You Pressed Cancel]]>
+            </line>
+            <line>
+              <![CDATA[PASSED – Confirmation alert message verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- confirmAlertTestCase -->
+        <test-method signature="promptAlertTestCase()[pri:3, instance:tests.AlertsPageTest@3fc2959f]" started-at="2026-04-10T14:59:05 IST" name="promptAlertTestCase" finished-at="2026-04-10T14:59:06 IST" duration-ms="519" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Handling Prompt Alert]]>
+            </line>
+            <line>
+              <![CDATA[Expected: Hello Tejas How are you today | Actual: Hello Tejas How are you today]]>
+            </line>
+            <line>
+              <![CDATA[PASSED – Prompt alert message verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- promptAlertTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AlertsPageTest@3fc2959f]" started-at="2026-04-10T14:59:06 IST" name="tearDown" finished-at="2026-04-10T14:59:11 IST" duration-ms="5830" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AlertsPageTest -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2026-04-10T14:58:48 IST" name="ChromeTest" finished-at="2026-04-10T14:59:13 IST" duration-ms="24973">
+      <class name="tests.AlertsPageTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:tests.AlertsPageTest@689604d9]" started-at="2026-04-10T14:58:49 IST" name="setUp" finished-at="2026-04-10T14:59:01 IST" duration-ms="12775" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Navigated to URL: https://demo.automationtesting.in/Alerts.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="validateAlertsPage()[pri:0, instance:tests.AlertsPageTest@689604d9]" started-at="2026-04-10T14:59:01 IST" name="validateAlertsPage" finished-at="2026-04-10T14:59:06 IST" duration-ms="4585" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[PASSED - Alerts page verified. Title: Alerts]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- validateAlertsPage -->
+        <test-method signature="simpleAlertTestCase()[pri:1, instance:tests.AlertsPageTest@689604d9]" started-at="2026-04-10T14:59:06 IST" name="simpleAlertTestCase" finished-at="2026-04-10T14:59:06 IST" duration-ms="475" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Clicked on Simple Alert button]]>
+            </line>
+            <line>
+              <![CDATA[Expected: I am an alert box! | Actual: I am an alert box!]]>
+            </line>
+            <line>
+              <![CDATA[PASSED – Simple alert message verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- simpleAlertTestCase -->
+        <test-method signature="confirmAlertTestCase()[pri:2, instance:tests.AlertsPageTest@689604d9]" started-at="2026-04-10T14:59:06 IST" name="confirmAlertTestCase" finished-at="2026-04-10T14:59:07 IST" duration-ms="559" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Handling Confirmation Alert]]>
+            </line>
+            <line>
+              <![CDATA[Expected: You Pressed Cancel | Actual: You Pressed Cancel]]>
+            </line>
+            <line>
+              <![CDATA[PASSED – Confirmation alert message verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- confirmAlertTestCase -->
+        <test-method signature="promptAlertTestCase()[pri:3, instance:tests.AlertsPageTest@689604d9]" started-at="2026-04-10T14:59:07 IST" name="promptAlertTestCase" finished-at="2026-04-10T14:59:07 IST" duration-ms="506" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Handling Prompt Alert]]>
+            </line>
+            <line>
+              <![CDATA[Expected: Hello Tejas How are you today | Actual: Hello Tejas How are you today]]>
+            </line>
+            <line>
+              <![CDATA[PASSED – Prompt alert message verified]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- promptAlertTestCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.AlertsPageTest@689604d9]" started-at="2026-04-10T14:59:07 IST" name="tearDown" finished-at="2026-04-10T14:59:13 IST" duration-ms="6019" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed successfully]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.AlertsPageTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Alerts Suite -->
+</testng-results>
