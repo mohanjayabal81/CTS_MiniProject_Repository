@@ -9,6 +9,7 @@ import org.testng.Assert;
 
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -32,7 +33,7 @@ public class TestAlert {
 
 	@Parameters("browser")
 	@BeforeTest
-	public void setup(String browserName) throws IOException {
+	public void setup(@Optional("chrome") String browserName) throws IOException {
 		
 		//creating objects
 		browser = new BrowserImplementation();
