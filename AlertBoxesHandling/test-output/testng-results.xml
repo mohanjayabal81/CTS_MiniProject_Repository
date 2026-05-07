@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="4" failed="0" skipped="4">
+  <reporter-output>
+    <line>
+      <![CDATA[Setup failed: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver]]>
+    </line>
+    <line>
+      <![CDATA[Browser: chrome | URL: https://demo.automationtesting.in/Alerts.html]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to Alerts page via SwitchTo menu.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: 'I am an alert box!' | Actual: 'I am an alert box!']]>
+    </line>
+    <line>
+      <![CDATA[PASS: Simple alert verified and accepted.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: 'You Pressed Cancel' | Actual: 'You Pressed Cancel']]>
+    </line>
+    <line>
+      <![CDATA[PASS: Confirm cancel message verified.]]>
+    </line>
+    <line>
+      <![CDATA[Input: 'Vaibhav' | Expected: 'Hello Vaibhav How are you today' | Actual: 'Hello Vaibhav How are you today']]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-04-12T18:04:57 IST" name="Default suite" finished-at="2026-04-12T18:05:22 IST" duration-ms="25803">
+    <groups>
+    </groups>
+    <test started-at="2026-04-12T18:04:57 IST" name="EdgeTest" finished-at="2026-04-12T18:05:02 IST" duration-ms="5764">
+      <class name="testcases.AlertsFunctionalTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.AlertsFunctionalTest@217ed35e]" started-at="2026-04-12T18:04:57 IST" name="setup" finished-at="2026-04-12T18:05:02 IST" duration-ms="5666" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Aborting tests — browser setup failed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Aborting tests — browser setup failed.
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:119)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:85)
+at browserimplementation.BrowserLoader.launchFirefox(BrowserLoader.java:41)
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:44)
+... 18 more
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+            <line>
+              <![CDATA[Setup failed: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToAlertsPage()[pri:0, instance:testcases.AlertsFunctionalTest@217ed35e]" started-at="2026-04-12T18:05:02 IST" name="navigateToAlertsPage" finished-at="2026-04-12T18:05:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Aborting tests — browser setup failed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Aborting tests — browser setup failed.
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:119)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:85)
+at browserimplementation.BrowserLoader.launchFirefox(BrowserLoader.java:41)
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:44)
+... 18 more
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToAlertsPage -->
+        <test-method signature="verifyAlertTextAndAccept()[pri:1, instance:testcases.AlertsFunctionalTest@217ed35e]" started-at="2026-04-12T18:05:02 IST" name="verifyAlertTextAndAccept" finished-at="2026-04-12T18:05:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Aborting tests — browser setup failed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Aborting tests — browser setup failed.
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:119)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:85)
+at browserimplementation.BrowserLoader.launchFirefox(BrowserLoader.java:41)
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:44)
+... 18 more
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAlertTextAndAccept -->
+        <test-method signature="verifyConfirmCancel()[pri:2, instance:testcases.AlertsFunctionalTest@217ed35e]" started-at="2026-04-12T18:05:02 IST" name="verifyConfirmCancel" finished-at="2026-04-12T18:05:02 IST" duration-ms="1" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Aborting tests — browser setup failed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Aborting tests — browser setup failed.
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:119)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:85)
+at browserimplementation.BrowserLoader.launchFirefox(BrowserLoader.java:41)
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:44)
+... 18 more
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyConfirmCancel -->
+        <test-method signature="verifyPromptInput()[pri:3, instance:testcases.AlertsFunctionalTest@217ed35e]" started-at="2026-04-12T18:05:02 IST" name="verifyPromptInput" finished-at="2026-04-12T18:05:02 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[Aborting tests — browser setup failed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: Aborting tests — browser setup failed.
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:61)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+at java.base/java.lang.Thread.run(Thread.java:1583)
+Caused by: org.openqa.selenium.remote.NoSuchDriverException: Unable to obtain: geckodriver, error Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:123)
+at org.openqa.selenium.remote.service.DriverFinder.getDriverPath(DriverFinder.java:54)
+at org.openqa.selenium.firefox.FirefoxDriver.generateExecutor(FirefoxDriver.java:128)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:119)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:99)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:95)
+at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:85)
+at browserimplementation.BrowserLoader.launchFirefox(BrowserLoader.java:41)
+at testcases.AlertsFunctionalTest.setup(AlertsFunctionalTest.java:44)
+... 18 more
+Caused by: org.openqa.selenium.WebDriverException: Command failed with code: 65, executed: [--browser, firefox, --language-binding, java, --output, json]
+Unsuccessful response (403 Forbidden) for URL https://ftp.mozilla.org/pub/firefox/releases/149.0.2/win64/en-US/Firefox%20Setup%20149.0.2.exe
+Build info: version: '4.41.0', revision: '9fc754f'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '21.0.10'
+Driver info: driver.version: FirefoxDriver
+at org.openqa.selenium.manager.SeleniumManager.runCommand(SeleniumManager.java:176)
+at org.openqa.selenium.manager.SeleniumManager.getBinaryPaths(SeleniumManager.java:275)
+at org.openqa.selenium.remote.service.DriverFinder.getBinaryPaths(DriverFinder.java:103)
+... 26 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPromptInput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AlertsFunctionalTest@217ed35e]" started-at="2026-04-12T18:05:02 IST" name="tearDown" finished-at="2026-04-12T18:05:02 IST" duration-ms="0" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AlertsFunctionalTest -->
+    </test> <!-- EdgeTest -->
+    <test started-at="2026-04-12T18:04:57 IST" name="ChromeTest" finished-at="2026-04-12T18:05:22 IST" duration-ms="25803">
+      <class name="testcases.AlertsFunctionalTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.AlertsFunctionalTest@38afe297]" started-at="2026-04-12T18:04:57 IST" name="setup" finished-at="2026-04-12T18:05:14 IST" duration-ms="16885" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser: chrome | URL: https://demo.automationtesting.in/Alerts.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToAlertsPage()[pri:0, instance:testcases.AlertsFunctionalTest@38afe297]" started-at="2026-04-12T18:05:14 IST" name="navigateToAlertsPage" finished-at="2026-04-12T18:05:17 IST" duration-ms="3695" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigated to Alerts page via SwitchTo menu.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- navigateToAlertsPage -->
+        <test-method signature="verifyAlertTextAndAccept()[pri:1, instance:testcases.AlertsFunctionalTest@38afe297]" started-at="2026-04-12T18:05:17 IST" name="verifyAlertTextAndAccept" finished-at="2026-04-12T18:05:18 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: 'I am an alert box!' | Actual: 'I am an alert box!']]>
+            </line>
+            <line>
+              <![CDATA[PASS: Simple alert verified and accepted.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAlertTextAndAccept -->
+        <test-method signature="verifyConfirmCancel()[pri:2, instance:testcases.AlertsFunctionalTest@38afe297]" started-at="2026-04-12T18:05:18 IST" name="verifyConfirmCancel" finished-at="2026-04-12T18:05:18 IST" duration-ms="265" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: 'You Pressed Cancel' | Actual: 'You Pressed Cancel']]>
+            </line>
+            <line>
+              <![CDATA[PASS: Confirm cancel message verified.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyConfirmCancel -->
+        <test-method signature="verifyPromptInput()[pri:3, instance:testcases.AlertsFunctionalTest@38afe297]" started-at="2026-04-12T18:05:18 IST" name="verifyPromptInput" finished-at="2026-04-12T18:05:18 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Input: 'Vaibhav' | Expected: 'Hello Vaibhav How are you today' | Actual: 'Hello Vaibhav How are you today']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPromptInput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AlertsFunctionalTest@38afe297]" started-at="2026-04-12T18:05:18 IST" name="tearDown" finished-at="2026-04-12T18:05:22 IST" duration-ms="4361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AlertsFunctionalTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Default suite -->
+</testng-results>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[Browser: chrome | URL: https://demo.automationtesting.in/Alerts.html]]>
+    </line>
+    <line>
+      <![CDATA[Navigated to Alerts page via SwitchTo menu.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: 'I am an alert box!' | Actual: 'I am an alert box!']]>
+    </line>
+    <line>
+      <![CDATA[PASS: Simple alert verified and accepted.]]>
+    </line>
+    <line>
+      <![CDATA[Expected: 'You Pressed Cancel' | Actual: 'You Pressed Cancel']]>
+    </line>
+    <line>
+      <![CDATA[PASS: Confirm cancel message verified.]]>
+    </line>
+    <line>
+      <![CDATA[Input: 'Vaibhav' | Expected: 'Hello Vaibhav How are you today' | Actual: 'Hello Vaibhav How are you today']]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-04-20T16:12:57 IST" name="Default suite" finished-at="2026-04-20T16:13:29 IST" duration-ms="31776">
+    <groups>
+    </groups>
+    <test started-at="2026-04-20T16:12:57 IST" name="ChromeTest" finished-at="2026-04-20T16:13:29 IST" duration-ms="31776">
+      <class name="testcases.AlertsFunctionalTest">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:testcases.AlertsFunctionalTest@6aba2b86]" started-at="2026-04-20T16:12:57 IST" name="setup" finished-at="2026-04-20T16:13:19 IST" duration-ms="22066" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Browser: chrome | URL: https://demo.automationtesting.in/Alerts.html]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="navigateToAlertsPage()[pri:0, instance:testcases.AlertsFunctionalTest@6aba2b86]" started-at="2026-04-20T16:13:19 IST" name="navigateToAlertsPage" finished-at="2026-04-20T16:13:24 IST" duration-ms="4652" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Navigated to Alerts page via SwitchTo menu.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- navigateToAlertsPage -->
+        <test-method signature="verifyAlertTextAndAccept()[pri:1, instance:testcases.AlertsFunctionalTest@6aba2b86]" started-at="2026-04-20T16:13:24 IST" name="verifyAlertTextAndAccept" finished-at="2026-04-20T16:13:25 IST" duration-ms="484" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: 'I am an alert box!' | Actual: 'I am an alert box!']]>
+            </line>
+            <line>
+              <![CDATA[PASS: Simple alert verified and accepted.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyAlertTextAndAccept -->
+        <test-method signature="verifyConfirmCancel()[pri:2, instance:testcases.AlertsFunctionalTest@6aba2b86]" started-at="2026-04-20T16:13:25 IST" name="verifyConfirmCancel" finished-at="2026-04-20T16:13:25 IST" duration-ms="506" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Expected: 'You Pressed Cancel' | Actual: 'You Pressed Cancel']]>
+            </line>
+            <line>
+              <![CDATA[PASS: Confirm cancel message verified.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyConfirmCancel -->
+        <test-method signature="verifyPromptInput()[pri:3, instance:testcases.AlertsFunctionalTest@6aba2b86]" started-at="2026-04-20T16:13:25 IST" name="verifyPromptInput" finished-at="2026-04-20T16:13:26 IST" duration-ms="511" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Input: 'Vaibhav' | Expected: 'Hello Vaibhav How are you today' | Actual: 'Hello Vaibhav How are you today']]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyPromptInput -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.AlertsFunctionalTest@6aba2b86]" started-at="2026-04-20T16:13:26 IST" name="tearDown" finished-at="2026-04-20T16:13:29 IST" duration-ms="3453" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.AlertsFunctionalTest -->
+    </test> <!-- ChromeTest -->
+  </suite> <!-- Default suite -->
+</testng-results>

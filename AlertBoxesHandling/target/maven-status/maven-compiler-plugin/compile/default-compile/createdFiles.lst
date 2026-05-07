@@ -1,0 +1,4 @@
+browserimplementation\BrowserLoader.class
+configreader\ObjectReader.class
+pages\AlertsPage.class
+utils\AlertHandlers.class
