@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-17T16:19:55 IST" name="Surefire suite" finished-at="2026-04-17T16:20:08 IST" duration-ms="13348">
+    <groups>
+    </groups>
+    <test started-at="2026-04-17T16:19:55 IST" name="Surefire test" finished-at="2026-04-17T16:20:08 IST" duration-ms="13348">
+      <class name="tests.EcommerceTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:19:45 IST" name="setUp" finished-at="2026-04-17T16:19:55 IST" duration-ms="9670" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="loginFlowTest()[pri:1, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:19:55 IST" name="loginFlowTest" finished-at="2026-04-17T16:19:59 IST" duration-ms="3874" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginFlowTest -->
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:19:59 IST" name="handleTestResult" finished-at="2026-04-17T16:19:59 IST" duration-ms="25" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginFlowTest status=SUCCESS method=EcommerceTest.loginFlowTest()[pri:1, instance:tests.EcommerceTest@63021689] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestResult -->
+        <test-method signature="productSearchFlow()[pri:2, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:19:59 IST" name="productSearchFlow" finished-at="2026-04-17T16:20:02 IST" duration-ms="3454" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSearchFlow -->
+        <test-method signature="cartCheckOutFlow()[pri:3, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:20:02 IST" name="cartCheckOutFlow" finished-at="2026-04-17T16:20:08 IST" duration-ms="5863" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cartCheckOutFlow -->
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:20:02 IST" name="handleTestResult" finished-at="2026-04-17T16:20:02 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=productSearchFlow status=SUCCESS method=EcommerceTest.productSearchFlow()[pri:2, instance:tests.EcommerceTest@63021689] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestResult -->
+        <test-method is-config="true" signature="handleTestResult(org.testng.ITestResult)[pri:0, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:20:08 IST" name="handleTestResult" finished-at="2026-04-17T16:20:08 IST" duration-ms="0" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=cartCheckOutFlow status=SUCCESS method=EcommerceTest.cartCheckOutFlow()[pri:3, instance:tests.EcommerceTest@63021689] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- handleTestResult -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:tests.EcommerceTest@63021689]" started-at="2026-04-17T16:20:08 IST" name="tearDown" finished-at="2026-04-17T16:20:16 IST" duration-ms="7895" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- tests.EcommerceTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>

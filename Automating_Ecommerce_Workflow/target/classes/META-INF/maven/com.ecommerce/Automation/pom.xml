@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0">
+    <modelVersion>4.0.0</modelVersion>
+ 
+    <groupId>com.ecommerce</groupId>
+    <artifactId>Automation</artifactId>
+    <version>1.0</version>
+ 
+    <dependencies>
+ 
+        <!-- Selenium -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>4.21.0</version>
+        </dependency>
+ 
+        <!-- TestNG -->
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <version>7.10.2</version>
+        </dependency>
+ 
+        <!-- WebDriverManager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>5.8.0</version>
+        </dependency>
+ 
+        <!-- Apache POI -->
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi-ooxml</artifactId>
+            <version>5.2.5</version>
+        </dependency>
+        <!-- Source: https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-edge-driver -->
+        
+<dependency>
+    <groupId>commons-io</groupId>   <!--used this dependency for screenshots-->
+    <artifactId>commons-io</artifactId>
+    <version>2.15.1</version>
+</dependency>
+<dependency>
+    <groupId>com.aventstack</groupId>     <!--extent report dependency-->
+    <artifactId>extentreports</artifactId>
+    <version>5.1.1</version>
+</dependency>
+    </dependencies>
+</project>
+ 
