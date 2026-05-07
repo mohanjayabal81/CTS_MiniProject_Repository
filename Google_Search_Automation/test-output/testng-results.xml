@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-04-13T14:44:18 IST" name="GoogleAutomation by packages" finished-at="2026-04-13T14:45:43 IST" duration-ms="84626">
+    <groups>
+    </groups>
+    <test started-at="2026-04-13T14:44:18 IST" name="com.tests" finished-at="2026-04-13T14:45:43 IST" duration-ms="84626">
+      <class name="com.tests.HomePageTests">
+        <test-method is-config="true" signature="setupReports()[pri:0, instance:com.tests.HomePageTests@7e8dcdaa]" started-at="2026-04-13T14:44:18 IST" name="setupReports" finished-at="2026-04-13T14:44:18 IST" duration-ms="431" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupReports -->
+        <test-method signature="VerifyHomePage()[pri:0, instance:com.tests.HomePageTests@7e8dcdaa]" started-at="2026-04-13T14:44:19 IST" name="VerifyHomePage" finished-at="2026-04-13T14:44:19 IST" duration-ms="45" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyHomePage -->
+        <test-method signature="NoOfLinksInWebPage()[pri:0, instance:com.tests.HomePageTests@7e8dcdaa]" started-at="2026-04-13T14:44:19 IST" name="NoOfLinksInWebPage" finished-at="2026-04-13T14:44:19 IST" depends-on-methods="com.tests.HomePageTests.VerifyHomePage" duration-ms="516" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoOfLinksInWebPage -->
+        <test-method signature="VerifySearchText()[pri:0, instance:com.tests.HomePageTests@7e8dcdaa]" started-at="2026-04-13T14:44:19 IST" name="VerifySearchText" finished-at="2026-04-13T14:44:19 IST" depends-on-methods="com.tests.HomePageTests.NoOfLinksInWebPage" duration-ms="148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifySearchText -->
+        <test-method signature="ScreenshotOfSearchSuggestion()[pri:0, instance:com.tests.HomePageTests@7e8dcdaa]" started-at="2026-04-13T14:44:19 IST" name="ScreenshotOfSearchSuggestion" finished-at="2026-04-13T14:44:20 IST" depends-on-methods="com.tests.HomePageTests.VerifySearchText" duration-ms="776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ScreenshotOfSearchSuggestion -->
+        <test-method signature="NoOfSearchSuggestionDisplayed()[pri:0, instance:com.tests.HomePageTests@7e8dcdaa]" started-at="2026-04-13T14:44:20 IST" name="NoOfSearchSuggestionDisplayed" finished-at="2026-04-13T14:45:24 IST" depends-on-methods="com.tests.HomePageTests.ScreenshotOfSearchSuggestion" duration-ms="63525" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NoOfSearchSuggestionDisplayed -->
+        <test-method is-config="true" signature="tearDownReport()[pri:0, instance:com.tests.HomePageTests@7e8dcdaa]" started-at="2026-04-13T14:45:43 IST" name="tearDownReport" finished-at="2026-04-13T14:45:50 IST" duration-ms="6842" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownReport -->
+      </class> <!-- com.tests.HomePageTests -->
+      <class name="com.tests.SearchResultTests">
+        <test-method signature="VerifyResultPage()[pri:0, instance:com.tests.SearchResultTests@4218500f]" started-at="2026-04-13T14:45:24 IST" name="VerifyResultPage" finished-at="2026-04-13T14:45:24 IST" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyResultPage -->
+        <test-method signature="AllTabTest()[pri:0, instance:com.tests.SearchResultTests@4218500f]" started-at="2026-04-13T14:45:24 IST" name="AllTabTest" finished-at="2026-04-13T14:45:24 IST" depends-on-methods="com.tests.SearchResultTests.VerifyResultPage" duration-ms="443" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- AllTabTest -->
+        <test-method signature="NewsTabTest()[pri:0, instance:com.tests.SearchResultTests@4218500f]" started-at="2026-04-13T14:45:24 IST" name="NewsTabTest" finished-at="2026-04-13T14:45:30 IST" depends-on-methods="com.tests.SearchResultTests.AllTabTest" duration-ms="6455" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- NewsTabTest -->
+        <test-method signature="ImagesTabTest()[pri:0, instance:com.tests.SearchResultTests@4218500f]" started-at="2026-04-13T14:45:30 IST" name="ImagesTabTest" finished-at="2026-04-13T14:45:37 IST" depends-on-methods="com.tests.SearchResultTests.NewsTabTest" duration-ms="6322" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ImagesTabTest -->
+        <test-method signature="VideosTabTest()[pri:0, instance:com.tests.SearchResultTests@4218500f]" started-at="2026-04-13T14:45:37 IST" name="VideosTabTest" finished-at="2026-04-13T14:45:43 IST" depends-on-methods="com.tests.SearchResultTests.ImagesTabTest" duration-ms="6296" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VideosTabTest -->
+      </class> <!-- com.tests.SearchResultTests -->
+    </test> <!-- com.tests -->
+  </suite> <!-- GoogleAutomation by packages -->
+</testng-results>
