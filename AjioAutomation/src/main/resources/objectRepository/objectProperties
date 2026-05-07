@@ -1,0 +1,8 @@
+baseUrl = https://www.ajio.com/
+searchProduct = Home Products
+title = Online Shopping Site for Women, Men, Kids Fashion, Lifestyle & More.
+searchXpath = //input[@type = 'text']
+priceXpath = //div[@class='prod-sp']
+addtocart = //div[@class = 'btn-gold']
+gotocart = //div[contains(@class, 'cart')]//span[text()='GO TO BAG']
+finalPriceXpath = //span[@class='price-value bold-font']

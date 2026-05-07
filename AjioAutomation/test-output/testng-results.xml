@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-07T17:29:17 IST" name="Default suite" finished-at="2026-05-07T17:31:06 IST" duration-ms="109270">
+    <groups>
+    </groups>
+    <test started-at="2026-05-07T17:29:17 IST" name="Default test" finished-at="2026-05-07T17:31:06 IST" duration-ms="109270">
+      <class name="testcases.NewTest">
+        <test-method is-config="true" signature="initialise()[pri:0, instance:testcases.NewTest@815b41f]" started-at="2026-05-07T17:29:17 IST" name="initialise" finished-at="2026-05-07T17:29:18 IST" duration-ms="580" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialise -->
+        <test-method signature="createDriver()[pri:0, instance:testcases.NewTest@815b41f]" started-at="2026-05-07T17:29:18 IST" name="createDriver" finished-at="2026-05-07T17:30:09 IST" duration-ms="51190" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createDriver -->
+        <test-method signature="validatePage()[pri:1, instance:testcases.NewTest@815b41f]" started-at="2026-05-07T17:30:09 IST" name="validatePage" finished-at="2026-05-07T17:30:10 IST" duration-ms="1458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- validatePage -->
+        <test-method signature="searchProduct()[pri:0, instance:testcases.NewTest@815b41f]" started-at="2026-05-07T17:30:10 IST" name="searchProduct" finished-at="2026-05-07T17:30:22 IST" depends-on-methods="testcases.NewTest.validatePage" duration-ms="11910" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchProduct -->
+        <test-method signature="selectAndAddToCart()[pri:0, instance:testcases.NewTest@815b41f]" started-at="2026-05-07T17:30:22 IST" name="selectAndAddToCart" finished-at="2026-05-07T17:30:52 IST" depends-on-methods="testcases.NewTest.searchProduct" duration-ms="29898" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectAndAddToCart -->
+        <test-method is-config="true" signature="exitBrowser()[pri:0, instance:testcases.NewTest@815b41f]" started-at="2026-05-07T17:30:52 IST" name="exitBrowser" finished-at="2026-05-07T17:31:06 IST" duration-ms="14109" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- exitBrowser -->
+      </class> <!-- testcases.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
