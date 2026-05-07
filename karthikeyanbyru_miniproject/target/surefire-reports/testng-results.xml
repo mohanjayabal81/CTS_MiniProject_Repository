@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+    <line>
+      <![CDATA[The page title has been verified.]]>
+    </line>
+    <line>
+      <![CDATA[Search details entered successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Results header verified.]]>
+    </line>
+    <line>
+      <![CDATA[Results and experience verified successfully.]]>
+    </line>
+    <line>
+      <![CDATA[Browser closed.]]>
+    </line>
+  </reporter-output>
+  <suite started-at="2026-04-17T15:12:08 IST" name="Surefire suite" finished-at="2026-04-17T15:12:23 IST" duration-ms="15606">
+    <groups>
+    </groups>
+    <test started-at="2026-04-17T15:12:08 IST" name="Surefire test" finished-at="2026-04-17T15:12:23 IST" duration-ms="15606">
+      <class name="testcases.NaukariTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:testcases.NaukariTest@78e117e3]" started-at="2026-04-17T15:12:08 IST" name="setUp" finished-at="2026-04-17T15:12:15 IST" duration-ms="7601" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLandingPage()[pri:1, instance:testcases.NaukariTest@78e117e3]" started-at="2026-04-17T15:12:15 IST" name="testLandingPage" finished-at="2026-04-17T15:12:15 IST" duration-ms="23" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[The page title has been verified.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testLandingPage -->
+        <test-method signature="testEnterDetails()[pri:2, instance:testcases.NaukariTest@78e117e3]" started-at="2026-04-17T15:12:15 IST" name="testEnterDetails" finished-at="2026-04-17T15:12:17 IST" duration-ms="1924" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Search details entered successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testEnterDetails -->
+        <test-method signature="testVerifyResultsAndExperience()[pri:3, instance:testcases.NaukariTest@78e117e3]" started-at="2026-04-17T15:12:17 IST" name="testVerifyResultsAndExperience" finished-at="2026-04-17T15:12:19 IST" duration-ms="1214" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Results header verified.]]>
+            </line>
+            <line>
+              <![CDATA[Results and experience verified successfully.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- testVerifyResultsAndExperience -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.NaukariTest@78e117e3]" started-at="2026-04-17T15:12:19 IST" name="tearDown" finished-at="2026-04-17T15:12:23 IST" duration-ms="4770" status="PASS">
+          <reporter-output>
+            <line>
+              <![CDATA[Browser closed.]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.NaukariTest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
