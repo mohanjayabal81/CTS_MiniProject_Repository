@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="ReddifTestSuite" verbose="1">
+    <test name="PageTests">
+        <classes>
+            <class name="test_Case.ReddifTest"/>
+        </classes>
+    </test>
+</suite>
